@@ -1,0 +1,73 @@
+{
+    "name": "4.1 Get contenedor destino validacion estado",
+    "request": {	
+        "method": "POST",
+        "header": [],
+        "body": {
+            "mode": "raw",
+            "raw": "{\r\n  \"id_Contenedor_Trasvaciado\": 63,\r\n  \"contenedor_Destino\": \"GLDU7389976\",\r\n  \"usuario\": \"80727548\"\r\n}"
+        },
+        "url": {
+            "raw": "https://localhost:7233/Recibo/GuardarContenedorDestino",
+            "protocol": "https",
+            "host": [
+                "localhost"
+            ],
+            "port": "7233",
+            "path": [
+                "Recibo",
+                "GuardarContenedorDestino"
+            ]
+        },
+        "description": "Ejemplo con los datos correctos"
+    },
+    "response": [
+        {
+            "id": "4f4a2a0c-c1f6-4d02-93fb-82d2c934f6c1",
+            "name": "4.1 Get contenedor destino validacion estado",
+            "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n  \"get_contenedor_estado\": 0\r\n}"
+                },
+                "url": {
+                    "raw": "https://localhost:7233/Recibo/GetContenedorEstado",
+                    "protocol": "https",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7233",
+                    "path": [
+                        "Recibo",
+                        "GetContenedorEstado"
+                    ]
+                }
+            },
+            "status": "OK",
+            "code": 200,
+            "_postman_previewlanguage": "json",
+            "header": [
+                {
+                    "key": "Content-Length",
+                    "value": "113"
+                },
+                {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                },
+                {
+                    "key": "Date",
+                    "value": "Tue, 13 Dec 2022 21:16:20 GMT"
+                },
+                {
+                    "key": "Server",
+                    "value": "Kestrel"
+                }
+            ],
+            "cookie": [],
+            "body": "{\n    \"Mensaje\": \"\",\n    \"Ok\": true,\n    \"Estado\": \"OK\",\n    \"Datos\": \"[{\\\"Id_Contenedor_Trasvaciado\\\":66.0,\\\"Contenedor\\\":\\\"HLBU9268405p\\\",\\\"Estado\\\":\\\"RECONTEO\\\",\\\"Reconteo\\\":true,\\\"Origen\\\":\\\"China\\\",\\\"Validacion\\\":\\\"OnTime\\\",\\\"Destino\\\":\\\"Bogota\\\",\\\"Flete\\\":\\\"Activo\\\"},{\\\"Id_Contenedor_Trasvaciado\\\":81.0,\\\"Contenedor\\\":\\\"TLLU8886041p\\\",\\\"Estado\\\":\\\"EN PROCESO\\\",\\\"Reconteo\\\":false,\\\"Origen\\\":\\\"China\\\",\\\"Validacion\\\":\\\"OnTime\\\",\\\"Destino\\\":\\\"Bogota\\\",\\\"Flete\\\":\\\"Activo\\\"},{\\\"Id_Contenedor_Trasvaciado\\\":64.0,\\\"Contenedor\\\":\\\"HLBU1330418\\\",\\\"Estado\\\":\\\"EN PROCESO\\\",\\\"Reconteo\\\":false,\\\"Origen\\\":\\\"China\\\",\\\"Validacion\\\":\\\"OnTime\\\",\\\"Destino\\\":\\\"Bogota\\\",\\\"Flete\\\":\\\"Activo\\\"},{\\\"Id_Contenedor_Trasvaciado\\\":43.0,\\\"Contenedor\\\":\\\"ONEU0306580\\\",\\\"Estado\\\":\\\"EN PROCESO\\\",\\\"Reconteo\\\":false,\\\"Origen\\\":\\\"China\\\",\\\"Validacion\\\":\\\"OnTime\\\",\\\"Destino\\\":\\\"Bogota\\\",\\\"Flete\\\":\\\"Activo\\\"},{\\\"Id_Contenedor_Trasvaciado\\\":44.0,\\\"Contenedor\\\":\\\"MSKU8139425\\\",\\\"Estado\\\":\\\"EN PROCESO\\\",\\\"Reconteo\\\":false,\\\"Origen\\\":\\\"China\\\",\\\"Validacion\\\":\\\"OnTime\\\",\\\"Destino\\\":\\\"Bogota\\\",\\\"Flete\\\":\\\"Activo\\\"},{\\\"Id_Contenedor_Trasvaciado\\\":65.0,\\\"Contenedor\\\":\\\"UACU8514111\\\",\\\"Estado\\\":\\\"EN PROCESO\\\",\\\"Reconteo\\\":false,\\\"Origen\\\":\\\"China\\\",\\\"Validacion\\\":\\\"OnTime\\\",\\\"Destino\\\":\\\"Bogota\\\",\\\"Flete\\\":\\\"Activo\\\"},{\\\"Id_Contenedor_Trasvaciado\\\":83.0,\\\"Contenedor\\\":\\\"HLBU9775478\\\",\\\"Estado\\\":\\\"POR INICIAR\\\",\\\"Reconteo\\\":false,\\\"Origen\\\":\\\"China\\\",\\\"Validacion\\\":\\\"OnTime\\\",\\\"Destino\\\":\\\"Bogota\\\",\\\"Flete\\\":\\\"Activo\\\"},{\\\"Id_Contenedor_Trasvaciado\\\":69.0,\\\"Contenedor\\\":\\\"HLBU9268405\\\",\\\"Estado\\\":\\\"POR INICIAR\\\",\\\"Reconteo\\\":false,\\\"Origen\\\":\\\"China\\\",\\\"Validacion\\\":\\\"OnTime\\\",\\\"Destino\\\":\\\"Bogota\\\",\\\"Flete\\\":\\\"Activo\\\"},{\\\"Id_Contenedor_Trasvaciado\\\":82.0,\\\"Contenedor\\\":\\\"HLBU9517663\\\",\\\"Estado\\\":\\\"POR INICIAR\\\",\\\"Reconteo\\\":false,\\\"Origen\\\":\\\"China\\\",\\\"Validacion\\\":\\\"OnTime\\\",\\\"Destino\\\":\\\"Bogota\\\",\\\"Flete\\\":\\\"Activo\\\"}]\",\n    \"Objeto\": [\n        {\n            \"Id_Contenedor_Trasvaciado\": 66,\n            \"Contenedor\": \"HLBU9268405p\",\n            \"Estado\": \"RECONTEO\",\n            \"Reconteo\": true,\n            \"Origen\": \"China\",\n            \"Validacion\": \"OnTime\",\n            \"Destino\": \"Bogota\",\n            \"Flete\": \"Activo\"\n        },\n        {\n            \"Id_Contenedor_Trasvaciado\": 81,\n            \"Contenedor\": \"TLLU8886041p\",\n            \"Estado\": \"EN PROCESO\",\n            \"Reconteo\": false,\n            \"Origen\": \"China\",\n            \"Validacion\": \"OnTime\",\n            \"Destino\": \"Bogota\",\n            \"Flete\": \"Activo\"\n        },\n        {\n            \"Id_Contenedor_Trasvaciado\": 64,\n            \"Contenedor\": \"HLBU1330418\",\n            \"Estado\": \"EN PROCESO\",\n            \"Reconteo\": false,\n            \"Origen\": \"China\",\n            \"Validacion\": \"OnTime\",\n            \"Destino\": \"Bogota\",\n            \"Flete\": \"Activo\"\n        },\n        {\n            \"Id_Contenedor_Trasvaciado\": 43,\n            \"Contenedor\": \"ONEU0306580\",\n            \"Estado\": \"EN PROCESO\",\n            \"Reconteo\": false,\n            \"Origen\": \"China\",\n            \"Validacion\": \"OnTime\",\n            \"Destino\": \"Bogota\",\n            \"Flete\": \"Activo\"\n        },\n        {\n            \"Id_Contenedor_Trasvaciado\": 44,\n            \"Contenedor\": \"MSKU8139425\",\n            \"Estado\": \"EN PROCESO\",\n            \"Reconteo\": false,\n            \"Origen\": \"China\",\n            \"Validacion\": \"OnTime\",\n            \"Destino\": \"Bogota\",\n            \"Flete\": \"Activo\"\n        },\n        {\n            \"Id_Contenedor_Trasvaciado\": 65,\n            \"Contenedor\": \"UACU8514111\",\n            \"Estado\": \"EN PROCESO\",\n            \"Reconteo\": false,\n            \"Origen\": \"China\",\n            \"Validacion\": \"OnTime\",\n            \"Destino\": \"Bogota\",\n            \"Flete\": \"Activo\"\n        },\n        {\n            \"Id_Contenedor_Trasvaciado\": 83,\n            \"Contenedor\": \"HLBU9775478\",\n            \"Estado\": \"POR INICIAR\",\n            \"Reconteo\": false,\n            \"Origen\": \"China\",\n            \"Validacion\": \"OnTime\",\n            \"Destino\": \"Bogota\",\n            \"Flete\": \"Activo\"\n        },\n        {\n            \"Id_Contenedor_Trasvaciado\": 69,\n            \"Contenedor\": \"HLBU9268405\",\n            \"Estado\": \"POR INICIAR\",\n            \"Reconteo\": false,\n            \"Origen\": \"China\",\n            \"Validacion\": \"OnTime\",\n            \"Destino\": \"Bogota\",\n            \"Flete\": \"Activo\"\n        },\n        {\n            \"Id_Contenedor_Trasvaciado\": 82,\n            \"Contenedor\": \"HLBU9517663\",\n            \"Estado\": \"POR INICIAR\",\n            \"Reconteo\": false,\n            \"Origen\": \"China\",\n            \"Validacion\": \"OnTime\",\n            \"Destino\": \"Bogota\",\n            \"Flete\": \"Activo\"\n        }\n    ]\n}"
+        }
+    ]
+}
